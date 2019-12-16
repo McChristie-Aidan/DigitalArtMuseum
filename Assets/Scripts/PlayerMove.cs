@@ -25,8 +25,8 @@ public class PlayerMove : MonoBehaviour
         }
 
         direction = transform.right * x + transform.forward * z;
-
+        direction = direction.normalized;
         this.gameObject.transform.position += (this.direction * Time.deltaTime) * speed;
-        //Debug.Log(direction);
+        Debug.Log(direction);
     }
 }
