@@ -6,8 +6,9 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float baseSpeed = 10;
     float speed;
-    private Vector3 direction;
     public float sprintMultiplier = 2;
+
+    private Vector3 direction;
 
     // Update is called once per frame
     void Update()

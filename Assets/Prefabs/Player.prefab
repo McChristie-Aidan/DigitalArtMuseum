@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 10
+  rb: {fileID: 3522682609609947410}
   sprintMultiplier: 2
 --- !u!54 &3522682609609947410
 Rigidbody:

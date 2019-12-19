@@ -12,5 +12,25 @@ public class SceneLoader : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            LoadScene2A();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            LoadScene2B();
+        }
+    }
+
+    void LoadScene2A()
+    {
+        SceneManager.LoadScene("Test2A");
+    }
+
+    void LoadScene2B()
+    {
+        SceneManager.LoadScene("Test2B");
     }
 }
