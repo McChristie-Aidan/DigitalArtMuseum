@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            ReloadCurrentScene();
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha0))
@@ -22,6 +22,11 @@ public class SceneLoader : MonoBehaviour
         {
             LoadScene2B();
         }
+    }
+
+    void ReloadCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void LoadScene2A()
